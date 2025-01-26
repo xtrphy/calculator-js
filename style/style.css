@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+#calc {
+  display: flex;
+  min-height: 95vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: azure;
+}
+
+#container {
+  background-color: lightgreen;
+  border: 10px solid rgba(47, 47, 47, 1);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+  gap: 2px;
+}
+
+#display {
+  grid-column: 1 / -1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 3rem;
+  margin: 5px;
+  border-radius: 18px;
+}
+
+button {
+  margin: 1px;
+  border-radius: 5%;
+  border: none;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.clear {
+  background-color: lightcoral;
+}
+
+.sign {
+  background-color: lightcoral;
+}
+
+.percent {
+  background-color: lightcoral;
+}
+
+.operator {
+  background-color: lightsalmon;
+}
+
+.operand {
+  background-color: aliceblue;
+}
+
+#zero {
+  grid-column: span 2;
+  background-color: aliceblue;
+}
+
+.decimal {
+  background-color: aliceblue;
+}
+
+.equals {
+  background-color: lightsalmon;
+}
