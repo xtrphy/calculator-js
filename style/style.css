@@ -21,13 +21,14 @@ body {
 }
 
 #container {
-  background-color: lightgreen;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
   border: 10px solid rgba(47, 47, 47, 1);
-  border-radius: 6px;
+  border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(100px, auto) repeat(5, 80px);
-  gap: 2px;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #display {
@@ -48,43 +49,76 @@ button {
   border-radius: 5%;
   border: none;
   font-size: 2rem;
-  color: #000;
+  color: #333;
   cursor: pointer;
+  transition: all 0.15s ease;
 }
 
-button:hover {
-  opacity: 0.7;
+button:active {
+  transform: scale(0.95);
 }
 
 .clear {
-  background-color: rgb(240, 128, 128);
+  background-color: #ff6d6b;
+}
+
+.clear:hover {
+  background-color: #e85050;
 }
 
 .sign {
-  background-color: rgb(240, 128, 128);
+  background-color: #ff6d6b;
+}
+
+.sign:hover {
+  background-color: #e85050;
 }
 
 .percent {
-  background-color: lightcoral;
+  background-color: #ff6d6b;
+}
+
+.percent:hover {
+  background-color: #e85050;
 }
 
 .operator {
-  background-color: lightsalmon;
+  background-color: #ffa502;
+}
+
+.operator:hover {
+  background-color: #e67900;
 }
 
 .operand {
-  background-color: aliceblue;
+  background-color: rgb(240, 248, 255);
+}
+
+.operand:hover {
+  background-color: rgba(240, 248, 255, 0);
 }
 
 #zero {
   grid-column: span 2;
-  background-color: aliceblue;
+  background-color: rgb(240, 248, 255);
+}
+
+#zero:hover {
+  background-color: rgba(240, 248, 255, 0);
 }
 
 .decimal {
-  background-color: aliceblue;
+  background-color: rgb(240, 248, 255);
+}
+
+.decimal:hover {
+  background-color: rgba(240, 248, 255, 0);
 }
 
 .equals {
-  background-color: lightsalmon;
+  background-color: #ff6d6b;
+}
+
+.equals:hover {
+  background-color: #e85050;
 }
